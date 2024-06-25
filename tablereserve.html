@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="reservation.js"></script>
+  <title>Table Reservation</title>
+</head>
+<body>
+  <main>
+    <h2>Table Reservation</h2>
+    <form id="reservationForm" onsubmit="return validateReservationForm()">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="date">Date:</label><br>
+      <input type="date" id="date" name="date"><br>
+      <label for="time">Time:</label><br>
+      <input type="time" id="time" name="time"><br>
+      <label for="people">Number of People:</label><br>
+      <input type="number" id="people" name="people" min="1"><br>
+      <input type="submit" value="Reserve Table">
+    </form>
+  </main>
+</body>
+</html>
